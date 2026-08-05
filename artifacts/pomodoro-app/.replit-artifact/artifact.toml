@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Pomodoro Focus Timer"
+description = "A sleek Pomodoro Focus Timer and Task Tracker. Users set work/break intervals, track tasks, and stay productive. No backend — all data persisted in localStorage. Dark/light mode toggle, smooth animations, and a responsive mobile-first layout."
+version = "1.0.0"
+id = "artifacts/pomodoro-app"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19728
+
+[services.development]
+run = "pnpm --filter @workspace/pomodoro-app run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/pomodoro-app", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/pomodoro-app/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19728"
+BASE_PATH = "/"

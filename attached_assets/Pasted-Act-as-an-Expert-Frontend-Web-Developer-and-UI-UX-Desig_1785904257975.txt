@@ -1,0 +1,22 @@
+Act as an Expert Frontend Web Developer and UI/UX Designer. Your task is to build a complete, highly polished, and fully functional web application in a single response. 
+
+**The Application:** Build a modern "Pomodoro Focus Timer & Task Tracker". (If I specify a different app idea here, build that instead, following all the same rules below).
+
+**Tech Stack Constraints:**
+- Strictly use vanilla HTML5, CSS3, and ES6+ JavaScript.
+- NO frameworks or libraries (No React, Vue, Tailwind, jQuery, etc.).
+- NO backend, NO database, NO authentication. Use `localStorage` for any necessary data persistence.
+
+**Design & UI/UX Requirements:**
+- **Modern Aesthetic:** Implement a sleek, modern UI (e.g., subtle glassmorphism, soft drop shadows, or a clean dark/light mode toggle). Use a modern sans-serif font (like Inter or Roboto via Google Fonts).
+- **Responsive & Mobile-First:** The layout must be 100% responsive, working flawlessly on mobile phones, tablets, and desktop screens. Use Flexbox and CSS Grid.
+- **Smooth Animations:** Include polished CSS transitions (e.g., hover effects on buttons, smooth fade-ins for new tasks, pulsing effects for the active timer, and smooth modal/toast popups).
+
+**Code Quality & Structure Requirements:**
+- **File Structure:** Organize the code into exactly three files: `index.html`, `style.css`, and `script.js`.
+- **Length Constraint:** Keep the entire project under 500 lines of code combined, while still meeting all functional and design requirements.
+- **Readability:** Write clean, well-commented code. Explain complex JavaScript logic or unique CSS tricks with brief, helpful comments. Use semantic HTML tags.
+- **Robustness:** Ensure there are no console errors, dead ends, or broken UI elements. The app must be fully functional and ready to run immediately upon rendering.
+
+**Output Format:**
+Do not ask any follow-up questions. Output the complete code for the application right now. Provide the code in three clearly labeled code blocks for `index.html`, `style.css`, and `script.js`. Ensure the HTML file correctly links the CSS and JS files so I can run it immediately.
